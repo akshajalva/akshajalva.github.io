@@ -8,7 +8,6 @@ langchain
 openai 
 sentence-transformers 
 faiss-cpu
-uvicorn
 ctransformers
 python-box
 streamlit
@@ -17,4 +16,5 @@ ollama
 langchain-community
 fastapi
 langchain_huggingface
-#-e .
+chardet
+python-docx

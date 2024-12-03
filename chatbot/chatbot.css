@@ -1,0 +1,17 @@
+#chat-container {
+  position: fixed;
+  bottom: 80px; /* Above the icon */
+  right: 20px;
+  width: 300px;
+  height: 400px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  background-color: #f9f9f9; /* Match your background */
+  border-radius: 10px;
+  overflow: hidden;
+  z-index: 1000;
+}
+
+#chat-icon:hover {
+  background-color: #45a049; /* Slightly darker green */
+  transition: background-color 0.3s;
+}
