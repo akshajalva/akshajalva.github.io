@@ -88,7 +88,7 @@ document.addEventListener('DOMContentLoaded', function () {
   welcomeMessage.style.padding = '8px';
   welcomeMessage.style.backgroundColor = '#d9edf7';
   welcomeMessage.style.borderRadius = '5px';
-  welcomeMessage.innerHTML = `<strong>Bot:</strong> Welcome! What do you want to know about Akshaj?`;
+  welcomeMessage.innerHTML = `<strong>Bot:</strong> Welcome! I am Akshaj. What do you want to know about me?`;
   chatMessages.appendChild(welcomeMessage);
 
   // Input container
@@ -138,7 +138,7 @@ document.addEventListener('DOMContentLoaded', function () {
   // Function to fetch dynamic bot response from backend
   async function fetchBotResponse(userMessage) {
     try {
-      const response = await fetch('http://127.0.0.1:8000/chat', { // Replace '/api/chat' with your API endpoint
+      const response = await fetch('https://portfolio-chatbot-6850.onrender.com/chat', { // Replace '/api/chat' with your API endpoint
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
