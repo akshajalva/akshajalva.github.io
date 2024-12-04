@@ -88,7 +88,7 @@ document.addEventListener('DOMContentLoaded', function () {
   welcomeMessage.style.padding = '8px';
   welcomeMessage.style.backgroundColor = '#d9edf7';
   welcomeMessage.style.borderRadius = '5px';
-  welcomeMessage.innerHTML = `<strong>Bot:</strong> Welcome! I am Akshaj. What do you want to know about me?`;
+  welcomeMessage.innerHTML = `<strong>Bot:</strong> Welcome! I am Akshaj Alva. What do you want to know about me?`;
   chatMessages.appendChild(welcomeMessage);
 
   // Input container
