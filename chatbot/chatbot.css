@@ -4,6 +4,8 @@
   right: 20px;
   width: 400px;
   height: 500px;
+  max-width: 90vw; /* Ensure it doesn't take up too much space on large screens */
+  max-height: 80vh; /* Max height to avoid taking too much vertical space */
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
   background-color: #f8f8f8; /* Match your background */
   border-radius: 10px;
@@ -11,8 +13,27 @@
   z-index: 1000;
 }
 
+/* Styles for smaller screens (e.g., mobile devices) */
+@media (max-width: 600px) {
+  #chat-container {
+    width: 90vw; /* Make it responsive to the screen width */
+    height: 70vh; /* Adjust the height based on the screen height */
+    max-width: none; /* Remove max-width to let it adjust fully */
+    max-height: none; /* Remove max-height to let it adjust fully */
+  }
+}
+
+/* For very small screens like portrait phones */
+@media (max-width: 400px) {
+  #chat-container {
+    width: 100vw; /* Take full screen width */
+    height: 60vh; /* Adjust the height accordingly */
+  }
+}
+
+
 #chat-icon:hover {
-  background-color: #45a049; /* Slightly darker green */
+  background-color: transparent; /* Slightly darker green */
   transition: background-color 0.3s;
 }
 #chat-icon img:focus, #chat-icon img:hover {
