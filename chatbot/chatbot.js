@@ -211,7 +211,7 @@ document.addEventListener('DOMContentLoaded', function () {
   // Function to fetch dynamic bot response from backend
   async function fetchBotResponse(userMessage) {
     try {
-      const response = await fetch('https://portfolio-chatbot-6850.onrender.com/chat', { // Replace '/api/chat' with your API endpoint
+      const response = await fetch('https://portfolio-chatbot-1os3.onrender.com/chat', { // Replace '/api/chat' with your API endpoint
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
