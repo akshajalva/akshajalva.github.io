@@ -1,11 +1,11 @@
 #chat-container {
   position: fixed;
-  bottom: 80px; /* Above the icon */
+  bottom: 100px; /* Above the icon */
   right: 20px;
-  width: 300px;
-  height: 400px;
+  width: 400px;
+  height: 500px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-  background-color: #f9f9f9; /* Match your background */
+  background-color: #f8f8f8; /* Match your background */
   border-radius: 10px;
   overflow: hidden;
   z-index: 1000;
@@ -15,3 +15,74 @@
   background-color: #45a049; /* Slightly darker green */
   transition: background-color 0.3s;
 }
+#chat-icon img:focus, #chat-icon img:hover {
+  outline: none;
+  border: none;
+}
+
+/* Chat message wrapper for alignment */
+.message-wrapper {
+  display: flex;
+  margin: 5px 0;
+}
+
+/* User messages alignment */
+.message-wrapper.user {
+  justify-content: flex-end; /* Align user messages to the right */
+}
+
+/* Bot messages alignment */
+.message-wrapper.bot {
+  justify-content: flex-start; /* Align bot messages to the left */
+}
+
+/* Common styles for all messages */
+.message {
+  position: relative;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 14px;
+  white-space: pre-wrap; /* Preserve line breaks */
+  overflow-wrap: break-word; /* Prevent long words from breaking layout */
+  /* max-width: 70%; Limit message width to 70% of chatbox */
+}
+
+/* User message styles */
+.message.user {
+  background-color: #cbf1f1e7; /* User message background */
+  border-top-right-radius: 0; /* Flat top-right corner */
+  margin-right: 10px; /* Space for triangle */
+}
+
+.message.user::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: -10px; /* Position the triangle */
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0px 0 10px 10px;
+  border-color: transparent transparent transparent #cbf1f1e7; /* User message background */
+  ; /* Triangle color matches the background */
+}
+
+/* Bot message styles */
+.message.bot {
+  background-color: #d4e5b4; /* Bot message background */
+  border-top-left-radius: 0; /* Flat top-left corner */
+  margin-left: 10px; /* Space for triangle */
+}
+
+.message.bot::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -10px; /* Position the triangle */
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0px 10px 10px 0;
+  border-color: transparent #d4e5b4 transparent transparent; /* Triangle color matches the background */
+}
+
