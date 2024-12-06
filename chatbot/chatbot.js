@@ -67,7 +67,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
    // Add a header to the chat container
    const chatHeader = document.createElement('div');
-   chatHeader.style.backgroundColor = '#BAB86C';
+   chatHeader.style.backgroundColor = '#d4ebff';
    chatHeader.style.color = 'white';
    chatHeader.style.padding = '10px';
    chatHeader.style.fontSize = '16px';
@@ -82,7 +82,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // Add the "in progress" subtitle
     const headerSubtitle = document.createElement('div');
-    headerSubtitle.textContent = 'Note: Responses may vary or be inaccurate';
+    // headerSubtitle.textContent = 'Note: Responses may vary or be inaccurate';
     headerSubtitle.style.fontSize = '12px';
     headerSubtitle.style.fontWeight = 'bold';
     headerSubtitle.style.color = 'red';
@@ -102,7 +102,7 @@ document.addEventListener('DOMContentLoaded', function () {
   chatMessages.style.overflowY = 'auto';
   chatMessages.style.fontSize = '14px';
   chatMessages.style.border = '1px solid #ddd';
-  chatMessages.style.backgroundColor = '#f7f7f7';
+  chatMessages.style.backgroundColor = '#fff';
   chatMessages.style.display = 'flex';
   chatMessages.style.flexDirection = 'column'; // Stack messages vertically
   chatMessages.style.gap = '10px'; // Space between messages

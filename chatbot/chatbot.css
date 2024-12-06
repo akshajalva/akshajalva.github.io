@@ -7,7 +7,7 @@
   max-width: 90vw; /* Ensure it doesn't take up too much space on large screens */
   max-height: 80vh; /* Max height to avoid taking too much vertical space */
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-  background-color: #f8f8f8; /* Match your background */
+  background-color: #fff; /* Match your background */
   border-radius: 10px;
   overflow: hidden;
   z-index: 1000;
@@ -70,7 +70,7 @@
 
 /* User message styles */
 .message.user {
-  background-color: #cbf1f1e7; /* User message background */
+  background-color: #e0f7fa; /* User message background */
   border-top-right-radius: 0; /* Flat top-right corner */
   margin-right: 10px; /* Space for triangle */
 }
@@ -84,13 +84,13 @@
   height: 0;
   border-style: solid;
   border-width: 0px 0 10px 10px;
-  border-color: transparent transparent transparent #cbf1f1e7; /* User message background */
+  border-color: transparent transparent transparent #e0f7fa; /* User message background */
   ; /* Triangle color matches the background */
 }
 
 /* Bot message styles */
 .message.bot {
-  background-color: #d4e5b4; /* Bot message background */
+  background-color: #f1f8e9; /* Bot message background */
   border-top-left-radius: 0; /* Flat top-left corner */
   margin-left: 10px; /* Space for triangle */
 }
@@ -104,6 +104,6 @@
   height: 0;
   border-style: solid;
   border-width: 0px 10px 10px 0;
-  border-color: transparent #d4e5b4 transparent transparent; /* Triangle color matches the background */
+  border-color: transparent #f1f8e9 transparent transparent; /* Triangle color matches the background */
 }
 
